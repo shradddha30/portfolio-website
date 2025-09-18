@@ -17,7 +17,9 @@ export default function Home() {
         id="home"
         className="flex flex-col items-center justify-center text-center min-h-[80vh] px-6"
       >
-        <h2 className="text-5xl font-bold mb-4">Hello, I'm <span className="text-blue-400">shraddha</span></h2>
+        <h2 className="text-5xl font-bold mb-4">
+          Hello, I'm <span className="text-blue-400">Shraddha</span>
+        </h2>
         <p className="text-lg text-gray-300 max-w-2xl">
           A passionate web developer who loves building modern and responsive web applications using 
           <span className="text-blue-400"> Next.js </span> and <span className="text-green-400">Tailwind CSS</span>.
@@ -49,33 +51,57 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="px-8 py-20 text-center">
-        <h2 className="text-4xl font-bold mb-10">Projects</h2>
+      <section id="projects" className="py-20 px-10">
+        <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Kooler’s Soup Café */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:scale-105 transition">
-            <h3 className="text-2xl font-semibold mb-2">Kooler’s Soup Café</h3>
-            <p className="text-gray-400">
-              A Café Management System with authentication, menu management, orders & billing, and reports.
+          
+          {/* Koolers Caffe Project */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+            <h3 className="text-xl font-semibold mb-2">☕ Koolers Caffe</h3>
+            <p className="text-gray-400 mb-4">
+              A modern café management system with menu, orders, billing, and reports.  
               Built using PHP, MySQL, HTML, CSS, and JavaScript.
             </p>
+            <a 
+              href="https://github.com/yourusername/koolers-caffe" 
+              target="_blank" 
+              className="text-blue-400 hover:underline"
+            >
+              View on GitHub
+            </a>
           </div>
 
           {/* Portfolio Website */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:scale-105 transition">
-            <h3 className="text-2xl font-semibold mb-2">Portfolio Website</h3>
-            <p className="text-gray-400">
-              Personal portfolio built with Next.js and Tailwind CSS to showcase my projects and skills.
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+            <h3 className="text-xl font-semibold mb-2">🌐 Personal Portfolio</h3>
+            <p className="text-gray-400 mb-4">
+              My personal portfolio built with Next.js & Tailwind CSS to showcase my projects and skills.
             </p>
+            <a 
+              href="https://github.com/yourusername/portfolio" 
+              target="_blank" 
+              className="text-blue-400 hover:underline"
+            >
+              View on GitHub
+            </a>
           </div>
 
-          {/* Coming Soon */}
-          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:scale-105 transition">
-            <h3 className="text-2xl font-semibold mb-2">Coming Soon</h3>
-            <p className="text-gray-400">
-              More exciting projects will be added here!
+          {/* Weather App */}
+          <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition">
+            <h3 className="text-xl font-semibold mb-2">🌦 Weather App</h3>
+            <p className="text-gray-400 mb-4">
+              A weather forecasting app using OpenWeather API.  
+              Provides real-time weather updates with a clean and intuitive UI.
             </p>
+            <a 
+              href="https://github.com/yourusername/weather-app" 
+              target="_blank" 
+              className="text-blue-400 hover:underline"
+            >
+              View on GitHub
+            </a>
           </div>
+          
         </div>
       </section>
 
@@ -112,7 +138,9 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-6 text-center bg-gray-900 border-t border-gray-700">
-        <p className="text-gray-500">© {new Date().getFullYear()} shraddha. All rights reserved.</p>
+        <p className="text-gray-500">
+          © {new Date().getFullYear()} Shraddha. All rights reserved.
+        </p>
       </footer>
     </div>
   );
